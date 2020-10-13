@@ -1,0 +1,37 @@
+.row{
+  margin-left: 20px;
+  color: white;
+}
+
+.row__posts {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding: 20px; /*this allows more breathing room for the movie posts*/
+}
+
+.row__posts::-webkit-scrollbar{
+  display: none; /*keep scrollbar functionality but dont display it*/
+}
+
+.row__post {
+  object-fit: contain;
+  width: 100%;
+  max-height: 100px;
+  transition: transform 150ms; /*add "silky" animation when hovering over movies*/
+  margin-right: 10px;
+}
+
+.row__post:hover{
+  transform: scale(1.06);
+}
+
+
+.row__postLarge{
+  max-height: 250px;
+
+}
+
+.row__postLarge:hover {
+  transform: scale(1.08);
+}
